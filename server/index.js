@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
   res.send('hi')
 })
 
+//route
+app.get('/api/hello', (req, res) => {
+  res.send('hello')
+})
 
 //회원가입 route
 app.post('/api/users/register', (req, res) => {
