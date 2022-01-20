@@ -1,6 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import React, {useState} from 'react';
 
 import Axios from 'axios';
+import Button from "react-bootstrap/Button";
 import { useNavigate } from 'react-router-dom';
 
 function LoginPage(history) {
@@ -52,9 +55,9 @@ function LoginPage(history) {
                 <label>Password</label>
                 <input type="password" value={Password} onChange={onPasswordHandler} />
                 <br />
-                <button type="submit">
+                <Button type="submit">
                     Login
-                </button>
+                </Button>
             </form>
         </div>
     )
